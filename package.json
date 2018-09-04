@@ -1,0 +1,39 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "zuzi blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack-dev-server --inline --progress --config ./webpack.dev.js",
+    "pack": "node_modules/.bin/webpack --watch --config ./webpack.dev.js",
+    "tpack": "node_modules/.bin/webpack --config ./webpack.pro.js"
+  },
+  "author": "guohezuzi",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
+    "marked": "^0.5.0",
+    "normalize.css": "^8.0.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.1.1",
+    "vue-loader": "^15.4.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.17.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  }
+}
