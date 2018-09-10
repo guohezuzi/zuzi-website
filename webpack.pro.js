@@ -6,8 +6,8 @@ module.exports = {
     mode: "production",
     entry: './src/main.js',
     output: {
-        path: path.resolve(__dirname, "dist"),
-        publicPath: "dist/",
+        path: path.resolve(__dirname, "public"),
+        publicPath: "public/",
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js'
     },

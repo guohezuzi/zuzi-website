@@ -30,7 +30,7 @@
             this.$http.get('/api/article/randomArticle.json')
                 .then(response => (this.randomArticle = response.data))
                 .catch(error => console.log(error));
-            this.$emit('changeBackground', 'url(\'../../public/img/Layer27.png\')')
+            this.$emit('changeBackground', 'url(\'/public/img/Layer27.png\')')
         }
     }
 </script>

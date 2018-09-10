@@ -70,7 +70,6 @@
     #header {
         width: 100%;
         height: 100vh;
-        background-image: url('../../public/img/Layer27.png');
         background-size: cover;
         overflow: hidden;
         animation: fadeIn 1s;

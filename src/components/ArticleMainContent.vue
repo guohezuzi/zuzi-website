@@ -145,15 +145,15 @@
     }
 
     #article-recommend-item1 {
-        background-image: url('../../public/img/Layer 28.png');
+        background-image: url('/public/img/Layer 28.png');
     }
 
     #article-recommend-item2 {
-        background-image: url('../../public/img/Layer 30.png');
+        background-image: url('/public/img/Layer 30.png');
     }
 
     #article-recommend-item3 {
-        background-image: url('../../public/img/Layer 31.png');
+        background-image: url('/public/img/Layer 31.png');
     }
 
     .article-recommend-item-title {
@@ -209,3 +209,4 @@
     #article-reply-button:hover {
         animation: bounce 1s;
     }
+</style>
