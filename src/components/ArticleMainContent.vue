@@ -145,15 +145,15 @@
     }
 
     #article-recommend-item1 {
-        background-image: url('/public/img/Layer 28.png');
+        background-image: url('/public/img/Layer 28.jpg');
     }
 
     #article-recommend-item2 {
-        background-image: url('/public/img/Layer 30.png');
+        background-image: url('/public/img/Layer 30.jpg');
     }
 
     #article-recommend-item3 {
-        background-image: url('/public/img/Layer 31.png');
+        background-image: url('/public/img/Layer 31.jpg');
     }
 
     .article-recommend-item-title {

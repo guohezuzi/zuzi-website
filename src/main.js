@@ -4,7 +4,7 @@ import router from './router/index'
 import axios from 'axios'
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://www.guohezuzi.cn';
+axios.defaults.baseURL = 'http://www.localhost:8080';
 Vue.prototype.$http=axios
 //Vue.config.devtools=false;
 

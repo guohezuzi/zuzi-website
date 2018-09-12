@@ -2,7 +2,7 @@
     <div id="left-nav">
         <div class="left-wrap">
             <div class="img-wrap">
-                <img id="close" src="../../public/img/close.resized.png" @click="closeSideBar">
+                <img id="close" src="../../public/img/close.png" @click="closeSideBar">
             </div>
             <ul id="index-ul" v-if="!showCategories">
                 <li class="normal-index">

@@ -39,7 +39,7 @@
     export default {
         name: "ContactHeadContent",
         mounted(){
-            this.$emit('changeBackground', 'url(\'/public/img/Layer 53.png\')')
+            this.$emit('changeBackground', 'url(\'/public/img/Layer 53.jpg\')')
         }
     }
 </script>

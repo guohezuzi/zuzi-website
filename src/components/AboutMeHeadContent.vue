@@ -9,7 +9,7 @@
     export default {
         name: "AboutMeHeadContent",
         mounted(){
-            this.$emit('changeBackground','url(\'/public/img/Layer 52.png\')')
+            this.$emit('changeBackground','url(\'/public/img/Layer 52.jpg\')')
         }
     }
 </script>
