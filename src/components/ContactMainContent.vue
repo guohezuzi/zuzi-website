@@ -28,7 +28,7 @@
 
 <style scoped>
     #e-mail-wrap {
-        width: 60vw;
+        width: 75vw;
         margin: 5vh auto;
         border: 1px solid black;
     }
@@ -36,6 +36,10 @@
     #e-mail-wrap p{
         color: black;
         margin: 3vh auto;
+    }
+
+    #e-mail {
+        margin: 4vh 5vw;
     }
 
     #contact-input-wrap {
@@ -47,28 +51,24 @@
 
     #contact-input-wrap input{
         padding: 2vh 1vmin;
-        width: 22vw;
+        width: 46%;
         border: 1px solid black;
     }
 
     #e-mail textarea{
-        width: calc(50vw - 2vmin);
-        max-width: calc(50vw - 2vmin);
+        width: calc(100% - 2vmin);
+        max-width: calc(100% - 2vmin);
         height: 25vh;
         padding: 2vh 1vmin;
         border: 1px solid black;
 
     }
 
-    #e-mail {
-        margin: 4vh 5vw;
-    }
-
     #send{
         word-spacing: 0.5vw;
         color: white;
         margin-top: 2vh;
-        width: 50vw;
+        width: 100%;
         height: 8vh;
         background-color: #1f1f1f;
         font-size: 2vh;

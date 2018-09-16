@@ -56,7 +56,7 @@ const router =new Router({
             }
         },
         {
-            path: '/article/',
+            path: '/article',
             name: 'article',
             components: {
                 headContent: ArticleHeadContent,
@@ -83,7 +83,7 @@ const router =new Router({
                 title: 'ZUZI-BLOG-ERROR'
             }
         }
-    ],
+    ]
 })
 
 router.beforeEach ((to, from, next) => {
