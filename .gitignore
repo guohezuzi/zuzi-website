@@ -1,7 +1,6 @@
 node_modules
 .iml
 .idea
-# 这个ignore是针对服务器的
 src
 stats.json
 
