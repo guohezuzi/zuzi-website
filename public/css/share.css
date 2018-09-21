@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'MontserratUltraLight';
+    src: url('../fonts/MontserratUltraLight.eot');
+    src: url('../fonts/MontserratUltraLight.eot') format('embedded-opentype'),
+    url('../fonts/MontserratUltraLight.woff2') format('woff2'),
+    url('../fonts/MontserratUltraLight.woff') format('woff'),
+    url('../fonts/MontserratUltraLight.ttf') format('truetype'),
+    url('../fonts/MontserratUltraLight.svg#MontserratUltraLight') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "MontserratUltraLight";
+    color: white;
+    font-size: 2vmin;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+    overflow: hidden;
+}
+
+p:hover {
+    color: black;
+}
