@@ -35,3 +35,16 @@ p {
 p:hover {
     color: black;
 }
+
+.article-tag{
+    margin: 0 4px;
+    display: inline-block;
+    /*border: #fff solid 1px;
+    border-radius: 8%;*/
+}
+
+.article-tag:hover{
+    /*animation: jello 1s;*/
+    /*color: #afb5ac;*/
+    color: #c5a75b;
+}
