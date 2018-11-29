@@ -18,6 +18,7 @@
     "marked": "^0.5.0",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.17",
+    "vue-awesome": "^3.2.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
