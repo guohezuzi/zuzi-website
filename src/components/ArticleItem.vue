@@ -58,7 +58,6 @@
     width: 50%;
     height: 60vh;
     object-fit: cover;
-
   }
 
   .article-wrap {
@@ -74,5 +73,18 @@
     overflow: hidden;
     margin-bottom: 4vh;
     letter-spacing: 2vmin;
+  }
+
+  @media screen and (max-width: 450px){
+    .article-item img{
+      width: 100%;
+    }
+
+    .article-wrap{
+      width: 100%;
+      z-index: 2;
+      position: absolute;
+      background-color: rgba(50, 50, 50, 0.5);
+    }
   }
 </style>

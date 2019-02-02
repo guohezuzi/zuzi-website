@@ -36,8 +36,6 @@
 
 <style scoped>
     #icons {
-        width: 20vw;
-        height: 4.2vmin;
         margin: 0 auto;
         display: flex;
         justify-content: center;

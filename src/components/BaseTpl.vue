@@ -45,8 +45,8 @@
     data() {
       return {
         headArticleTitle: null,
-        show: true,
-        isSmall: true,
+        show: window.innerWidth>450,
+        isSmall: window.innerWidth>450
       }
     },
     methods: {
@@ -104,6 +104,14 @@
     position: relative;
     left: 20%;
     width: 80%;
+  }
+
+  @media screen and (max-width: 450px){
+    .small {
+      left: 40%;
+      width: 60%;
+      filter:blur(1vmin);
+    }
   }
 
   /*******尾部******/

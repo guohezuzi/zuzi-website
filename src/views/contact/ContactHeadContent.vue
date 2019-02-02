@@ -61,7 +61,6 @@
 
   #icons {
     width: 100%;
-    height: 4vmin;
     display: flex;
     justify-content: center;
   }

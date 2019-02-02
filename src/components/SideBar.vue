@@ -71,6 +71,12 @@
     background-color: #1c2023;
   }
 
+  @media screen and (max-width: 450px){
+    #left-nav{
+      width: 40%;
+    }
+  }
+
   .left-wrap {
     position: relative;
     width: 60%;
