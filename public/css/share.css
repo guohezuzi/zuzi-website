@@ -16,7 +16,7 @@
 body {
     font-family: "MontserratUltraLight";
     color: white;
-    font-size: 2vmin;
+    font-size: 2vh;
 }
 
 a {
@@ -75,7 +75,7 @@ p:hover {
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 2vmin;
+    font-size: 2vh;
     font-style: normal;
 }
 
