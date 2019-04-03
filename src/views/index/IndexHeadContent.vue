@@ -78,6 +78,7 @@
   }
 
   .article p {
+    margin: 0;
     text-align: center;
   }
 

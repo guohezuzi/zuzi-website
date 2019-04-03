@@ -18,7 +18,7 @@
 
 <style scoped>
   .article-button {
-    padding: 1vmin 12vmin;
+    padding: 1vh 12vh;
     border: 1px solid white;
     color: #fff;
   }

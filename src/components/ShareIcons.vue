@@ -42,8 +42,8 @@
     }
 
     .icon {
-        width: 4.5vmin;
-        height: 4.2vmin;
+        width: 4.5vh;
+        height: 4.2vh;
         border: 1px solid white;
         display: flex;
         justify-content: center;
