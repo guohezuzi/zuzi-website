@@ -9,19 +9,8 @@
     </transition>
 
     <div :class="{small : isSmall}" class="container">
-      <div id="header">
-        <nav>
-          <div @click="show = !show">
-            <i class="flaticon-menu point"></i>
-          </div>
-          <router-link to="/"><img class="logo" src="../../public/myblog.png" alt="">
-          </router-link>
-          <div>
-            <a href="#">LOGIN</a>
-            <span>/</span>
-            <a href="#">SIGN UP</a>
-          </div>
-        </nav>
+      <div id="header" :style="{ backgroundImage: image }">
+        <IndexNav @switchSideBar="show = !show"/>
         <transition
             enter-active-class="animated fadeIn"
         >
@@ -38,20 +27,22 @@
 
 <script>
   import SideBar from "./SideBar";
+  import IndexNav from "./IndexNav";
 
   export default {
     name: "BaseTpl",
-    components: {SideBar},
+    components: {IndexNav, SideBar},
     data() {
       return {
         headArticleTitle: null,
         show: window.innerWidth>450,
-        isSmall: window.innerWidth>450
+        isSmall: window.innerWidth>450,
+        image: ''
       }
     },
     methods: {
       changeBackground(url) {
-        document.getElementById('header').style.backgroundImage = url;
+        this.image = url;
       }
     }
   }
@@ -71,33 +62,7 @@
     background-size: cover;
     overflow: hidden;
     animation: fadeIn 1s;
-  }
-
-  nav {
-    display: flex;
-    padding-top: 6vh;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-  }
-
-  nav a {
-    font-weight: bolder;
-  }
-
-  nav img, svg {
-    cursor: pointer;
-  }
-
-  nav div {
-    width: 20vmin;
-    text-align: center;
-  }
-
-  .logo {
-    width: 10vh;
-    height: 10vh;
-    display: block;
+    background-color: #333;
   }
 
   .small {
