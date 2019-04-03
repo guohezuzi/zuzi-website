@@ -8,11 +8,6 @@
     url('../fonts/MontserratUltraLight.svg#MontserratUltraLight') format('svg');
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: "MontserratUltraLight";
     color: white;
@@ -33,7 +28,7 @@ p {
 }
 
 p:hover {
-    color: black;
+    /*color: black;*/
 }
 
 .article-tag{
