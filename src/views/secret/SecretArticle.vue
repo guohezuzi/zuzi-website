@@ -15,7 +15,7 @@
           <input id="visit-code" type="password" v-model="secret"/>
         </div>
       </div>
-      <div class="modal-button" @click="verify()">
+      <div class="modal-button" @touchend="verify" @click="verify">
         确定
       </div>
     </modal>
