@@ -23,6 +23,15 @@ a:hover {
     color: black;
 }
 
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #5CB8E5;
+}
+
 p {
     overflow: hidden;
 }
