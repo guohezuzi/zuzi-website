@@ -49,7 +49,8 @@
 <script>
   import ShareIcons from "../../components/ShareIcons";
   import marked from "marked";
-  import hls from "highlight.js";
+  import hls from "highlight.js/lib/highlight.js";
+  import java from 'highlight.js/lib/languages/java';
   import 'highlight.js/styles/googlecode.css';
 
   export default {
@@ -71,6 +72,7 @@
           })
       } else {
         // highlight.js的同步高亮
+        hls.registerLanguage('java', java);
         marked.setOptions({
           highlight: function (code) {
             return hls.highlightAuto(code).value;
