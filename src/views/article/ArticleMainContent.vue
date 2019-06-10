@@ -49,6 +49,8 @@
 <script>
   import ShareIcons from "../../components/ShareIcons";
   import marked from "marked";
+  import hls from "highlight.js";
+  import 'highlight.js/styles/googlecode.css';
 
   export default {
     name: "ArticleMainContent",
@@ -68,6 +70,12 @@
             this.$set(this.article, 'articleContent', marked(response.data))
           })
       } else {
+        // highlight.js的同步高亮
+        marked.setOptions({
+          highlight: function (code) {
+            return hls.highlightAuto(code).value;
+          }
+        });
         this.article.articleContent = marked(articleContent)
       }
     },

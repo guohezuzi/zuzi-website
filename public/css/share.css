@@ -40,6 +40,12 @@ p:hover {
     /*color: black;*/
 }
 
+pre {
+    background: #f5f2f0;
+    padding: 2vh;
+    border-radius: 1vh;
+}
+
 .article-tag{
     margin: 0 4px;
     display: inline-block;
