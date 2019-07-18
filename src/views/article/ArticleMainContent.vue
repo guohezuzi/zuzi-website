@@ -1,6 +1,6 @@
 <template>
   <div id="article-detail-wrap">
-    <p id="article-tips">标签：
+    <p id="article-tags">标签：
       <router-link class="article-tag" v-for="tag in article.articleTags" :key="tag"
                    :to="'/category/'+tag">
         {{tag}}
@@ -83,15 +83,20 @@
     },
   }
 </script>
-
+<style>
+  pre {
+    overflow-x: scroll !important;
+  }
+</style>
 <style scoped>
   #article-detail-wrap {
     color: black;
     margin: 0 auto;
     width: 76vw;
+    line-height: 3vh;
   }
 
-  #article-tips {
+  #article-tags {
     height: 6vh;
     line-height: 6vh;
     display: flex;
