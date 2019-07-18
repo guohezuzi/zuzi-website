@@ -64,6 +64,13 @@
     mounted() {
       this.article = this.$store.state.article
       let articleContent = this.article.articleContent;
+      // highlight.js的同步高亮
+      hls.registerLanguage('java', java);
+      marked.setOptions({
+        highlight: function (code) {
+          return hls.highlightAuto(code).value;
+        }
+      });
       if (!articleContent) {
         const url = "/api/articles/articleContent.json?articleId=" + this.article.articleId
         this.$http.get(url)
@@ -71,13 +78,6 @@
             this.$set(this.article, 'articleContent', marked(response.data))
           })
       } else {
-        // highlight.js的同步高亮
-        hls.registerLanguage('java', java);
-        marked.setOptions({
-          highlight: function (code) {
-            return hls.highlightAuto(code).value;
-          }
-        });
         this.article.articleContent = marked(articleContent)
       }
     },
