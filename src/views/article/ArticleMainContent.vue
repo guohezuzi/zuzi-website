@@ -1,6 +1,6 @@
 <template>
   <div id="article-detail-wrap">
-    <p id="article-tips">标签：
+    <p id="article-tags">标签：
       <router-link class="article-tag" v-for="tag in article.articleTags" :key="tag"
                    :to="'/category/'+tag">
         {{tag}}
@@ -64,6 +64,13 @@
     mounted() {
       this.article = this.$store.state.article
       let articleContent = this.article.articleContent;
+      // highlight.js的同步高亮
+      hls.registerLanguage('java', java);
+      marked.setOptions({
+        highlight: function (code) {
+          return hls.highlightAuto(code).value;
+        }
+      });
       if (!articleContent) {
         const url = "/api/articles/articleContent.json?articleId=" + this.article.articleId
         this.$http.get(url)
@@ -71,27 +78,25 @@
             this.$set(this.article, 'articleContent', marked(response.data))
           })
       } else {
-        // highlight.js的同步高亮
-        hls.registerLanguage('java', java);
-        marked.setOptions({
-          highlight: function (code) {
-            return hls.highlightAuto(code).value;
-          }
-        });
         this.article.articleContent = marked(articleContent)
       }
     },
   }
 </script>
-
+<style>
+  pre {
+    overflow-x: scroll !important;
+  }
+</style>
 <style scoped>
   #article-detail-wrap {
     color: black;
     margin: 0 auto;
     width: 76vw;
+    line-height: 3vh;
   }
 
-  #article-tips {
+  #article-tags {
     height: 6vh;
     line-height: 6vh;
     display: flex;

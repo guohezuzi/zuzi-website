@@ -8,6 +8,7 @@ import Toasted from 'vue-toasted'
 
 if (process.env.NODE_ENV === 'development') {
   Vue.config.productionTip = true
+  Vue.config.devtools = true
   axios.defaults.baseURL = 'http://localhost:8080'
 } else if (process.env.NODE_ENV === 'production') {
   Vue.config.productionTip = false
