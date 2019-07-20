@@ -72,6 +72,8 @@ export default {
             )
           )
           .catch(error => console.log(error));
+      }else{
+        this.$toasted.show("当前文章已经是最后一条了哦🙃")
       }
     }
   },
