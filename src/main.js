@@ -38,6 +38,18 @@ Vue.filter('coverArticleLink', function (value) {
   return '/article?'+params
 })
 
+Vue.filter('title',function(value) {
+  var res = "";
+  for (var v in value) { 
+    if (value[v] !== " " && !/[a-zA-Z]/.test(value[v])) {
+      res += " "+ value[v];
+    }else{
+      res += value[v]
+    }
+  }
+  return res;
+})
+
 new Vue({
   el: '#app',
   router,
