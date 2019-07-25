@@ -5,7 +5,7 @@
       <div class="article">
         <p class="article-item-title">{{article.articleTitle | title}}</p>
         <p>
-          {{article.articleLastUpdateTime}} /
+          {{article.articleCreateTime}} /
           <router-link
             class="article-tag"
             v-for="tag in article.articleTags"

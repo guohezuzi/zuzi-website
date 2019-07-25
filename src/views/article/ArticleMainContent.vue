@@ -1,10 +1,13 @@
 <template>
   <div id="article-detail-wrap">
-    <p id="article-tags">标签：
+    <p id="article-tags">
+      <span>标签：
       <router-link class="article-tag" v-for="tag in article.articleTags" :key="tag"
                    :to="'/category/'+tag">
         {{tag}}
       </router-link>
+      </span>
+      <span>文章最后更新于： {{article.articleLastUpdateTime}} </span>
     </p>
     <article v-html="article.articleContent">
     </article>
@@ -101,7 +104,7 @@
     line-height: 6vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .article-tag {
