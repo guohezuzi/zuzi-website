@@ -54,6 +54,8 @@
   import marked from "marked";
   import hls from "highlight.js/lib/highlight.js";
   import java from 'highlight.js/lib/languages/java';
+  import bash from 'highlight.js/lib/languages/bash';
+  import xml from 'highlight.js/lib/languages/xml';
   import 'highlight.js/styles/googlecode.css';
 
   export default {
@@ -69,6 +71,8 @@
       let articleContent = this.article.articleContent;
       // highlight.js的同步高亮
       hls.registerLanguage('java', java);
+      hls.registerLanguage('bash', bash);
+      hls.registerLanguage('xml', xml);
       marked.setOptions({
         highlight: function (code) {
           return hls.highlightAuto(code).value;
