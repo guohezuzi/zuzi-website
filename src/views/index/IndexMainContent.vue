@@ -48,7 +48,6 @@ export default {
   methods: {
     handleScroll: debounce(function() {
       const articleItems = document.getElementById("article-items").childNodes;
-      console.log(articleItems.length);
       for (let i of articleItems) {
         let diff = window.innerHeight - i.getBoundingClientRect().top;
         if (diff > 0 && i.getBoundingClientRect().bottom > 0) {

@@ -2,9 +2,9 @@
   <div id="head-content">
     <div class="article">
       <p id="welcome">欢迎来到卒子的博客</p>
-      <p id="head-article-title">{{randomArticle.articleTitle}}</p>
+      <p id="head-article-title">{{randomArticle.articleTitle | title}}</p>
       <p id="head-article-info">
-        {{randomArticle.articleLastUpdateTime}} /
+        {{randomArticle.articleCreateTime}} /
         <router-link class="article-tag" v-for="tag in randomArticle.articleTags" :key="tag" :to="'/category/'+tag">
           {{tag}}
         </router-link>
@@ -61,7 +61,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    letter-spacing: 2vmin;
+    word-spacing: 1vmin;
   }
 
   #head-content >>> .icon:hover {
