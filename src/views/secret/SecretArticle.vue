@@ -56,6 +56,7 @@
           this.article=response.data
           this.$modal.hide("verify-modal")
           this.$toasted.show("验证成功")
+          this.$emit('changeBackground', 'url(' + this.article.titlePicUrl + ')')
         }).catch(()=>{
           this.$toasted.show("验证失败")
         })
@@ -107,5 +108,6 @@
 
   article{
     margin: 0 17%;
+    color: black;
   }
 </style>
