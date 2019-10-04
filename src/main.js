@@ -40,10 +40,18 @@ Vue.filter('coverArticleLink', function (value) {
 
 Vue.filter('title',function(value) {
   var res = "";
-  for (var v in value) { 
-    if (value[v] !== " " && !/[a-zA-Z]/.test(value[v])) {
-      res += " "+ value[v];
-    }else{
+  var letter = false;
+  for (var v in value) {
+    // 汉字
+    if (value[v] !== " " && !/[0-9a-zA-Z]/.test(value[v])) {
+      res += " "+ value[v]
+      letter = false;
+    }// 字母第一次出现
+    else if (/[0-9a-zA-Z]/.test(value[v]) && !letter) {
+      letter = true
+      res += " " +value[v]
+    }// 字母非一次出现及空格
+    else{
       res += value[v]
     }
   }
