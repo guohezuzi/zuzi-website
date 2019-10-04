@@ -25,12 +25,13 @@ a:hover {
 }
 
 article a {
-    color: black;
+    color: #51b4e5;
     text-decoration: none;
 }
 
 article a:hover {
-    color: #5CB8E5;
+    color: blue;
+    text-decoration: underline solid blue;
 }
 
 p {
