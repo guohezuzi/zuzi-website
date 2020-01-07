@@ -121,6 +121,7 @@
 
   #article-detail-wrap article {
     margin: 4vh 0;
+    font-family: sans-serif;
   }
 
   #article-buttons {
