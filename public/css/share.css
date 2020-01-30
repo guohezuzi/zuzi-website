@@ -8,6 +8,10 @@
     url('../fonts/MontserratUltraLight.svg#MontserratUltraLight') format('svg');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "MontserratUltraLight";
     color: white;
