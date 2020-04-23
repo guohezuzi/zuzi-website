@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 #read-more {
-  background-image: url("/public/img/Layer12.jpg");
+  background-image: url("/public/img/read_more.jpg");
   background-size: cover;
   height: 40vh;
   width: 100%;

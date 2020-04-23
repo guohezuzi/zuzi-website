@@ -35,7 +35,7 @@
       this.$http.get('/api/articles/randomArticle.json')
         .then(response => (this.randomArticle = response.data))
         .catch(error => console.log(error));
-      this.$emit('changeBackground', 'url(\'/public/img/Layer27.jpg\')')
+      this.$emit('changeBackground', 'url(\'/public/img/home.jpg\')')
       //console.log(this.$store.state.article.articleTitle)
     },
     methods: {

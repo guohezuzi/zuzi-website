@@ -11,7 +11,7 @@
     export default {
         name: "Error",
         mounted(){
-            this.$emit('changeBackground','url(\'/public/img/Layer 7.jpg\')')
+            this.$emit('changeBackground','url(\'/public/img/404.jpg\')')
         }
     }
 </script>
