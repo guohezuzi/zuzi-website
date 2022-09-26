@@ -13,6 +13,7 @@ import ContactMainContent from '../views/contact/ContactMainContent'
 import ArticleHeadContent from '../views/article/ArticleHeadContent'
 import ArticleMainContent from '../views/article/ArticleMainContent'
 import SecretArticle from '../views/secret/SecretArticle'
+import RecordMeet from '../views/recordmeet/RecordMeet'
 
 
 Vue.use(Router)
@@ -109,6 +110,17 @@ const router = new Router({
           },
           meta: {
             title: 'ZUZI-BLOG-私密文章'
+          },
+        },
+        {
+          path: 'record-meet',
+          name: 'record_meet',
+          components: {
+            headContent: RecordMeet,
+            mainContent: null
+          },
+          meta: {
+            title: 'ZUZI-记遇'
           },
         },
       ]
