@@ -54,7 +54,7 @@
 <script>
 import ShareIcons from "../../components/ShareIcons";
 import marked from "marked";
-import hls from "highlight.js/lib/highlight.js";
+import hls from "highlight.js/lib/core";
 import java from "highlight.js/lib/languages/java";
 import bash from "highlight.js/lib/languages/bash";
 import xml from "highlight.js/lib/languages/xml";
